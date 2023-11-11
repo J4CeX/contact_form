@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+:root {
+  --HEADER-BGCOLOR: #202020;
+  --HEADER-COLOR: #fff;
+
+  --MAIN-BGCOLOR-START: #4361EE;
+  --MAIN-BGCOLOR-END: #4CC9F0;
+
+  --FOOTER-BGCOLOR: #000;
+  --FOOTER-COLOR: #fff;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  height: 50px;
+}
+
+#header-title-line a:any-link {
+  color: var(--HEADER-COLOR);
+  text-decoration: none;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 50px;
+  background: linear-gradient(45deg, var(--MAIN-BGCOLOR-START), var(--MAIN-BGCOLOR-END));
+  justify-content: center;
+  align-items: center;
+}
+
+#form-container {
+  max-width: 800px;
+  width: 80%;
+  height: 700px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 0 3px 1px #000;
+}
+
+label {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+label:first-child {
+  margin-top: 0;
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 0.5em;
+}
+
+textarea {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  resize: none;
+  flex: 1;
+}
+
+#submit-button {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  min-height: 100px;
+  background-color: var(--FOOTER-BGCOLOR);
+  color: var(--FOOTER-COLOR);
+}
+
