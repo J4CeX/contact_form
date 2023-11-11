@@ -93,6 +93,20 @@ textarea {
   margin-top: 1rem;
   font-size: 1.5rem;
   padding: 0.5rem;
+  background-color: #4361EE;
+  color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  box-shadow: 0 0 3px 1px #000;
+  text-shadow: 0 0 4px #000;
+}
+
+#submit-button:hover,
+#submit-button:focus {
+  background-color: #4CC9F0;
+  color: #000;
+  text-shadow: none;
 }
 
 /* FOOTER */
